@@ -1,0 +1,8 @@
+main: me.picknchew.cratekey.CrateKey
+name: CrateKey
+version: 1.0.7.1
+author: Arman
+description: CrateKey V 1.0.7.1 by Arman
+commands:
+  cratekey:
+    description: Access the CrateKey master command.
