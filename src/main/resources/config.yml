@@ -1,0 +1,167 @@
+Push-Back: true
+Force: 5.0
+
+Messages:
+  Prefix: '&7[&3CrateKey&7]'
+  Help:
+    - '&c/cratekey give {player} {tiername} {amount}'
+    - '&c/cratekey giveall {tiername} {amount}'
+    - '&c/cratekey addcrate {tiername}'
+    - '&c/cratekey removecrate'
+    - '&c/cratekey reload'
+  InvalidPlayer: '&cThat was an invalid player!'
+  InvalidTier: '&cThat was an invalid tier!'
+  InvalidNumber: '&cThat was an invalid number!'
+  InvalidCrate: '&cThat was an invalid crate!'
+  InvalidKey: '&cYou need a %tier% key to open this crate!'
+  InventoryFull: '&cYour inventory was full, so the items were dropped on the ground!'
+  NotAChest: '&cThat was not a chest!'
+  NoPermission: '&cYou have no permission to do this!'
+  AlreadyCrate: '&cThat chest is already a crate!'
+  Add: '&6Right-Click a chest to create a crate.'
+  Remove: '&6Right-Click a chest to delete a crate.'
+  RemoveCrate: '&6You have successfully removed the crate!'
+  AddCrate: '&6You have successfully added the crate!'
+  Reload: '&6You have reloaded the configuration file!'
+  Give: '&6You have given %player% %cratekeys% %tier% keys!'
+  GiveAll: '&6You have given all players %cratekeys% %tier% keys'
+  Recieve: '&6You have recieved %cratekeys% %tier% keys!'
+
+Rewards:
+  Hero:
+    ChestParticle:
+      Enabled: true
+      Particle: PORTAL
+      Interval: 20
+      OffsetX: 1
+      OffsetY: 1
+      OffsetZ: 1
+      Speed: 1
+      Amount: 10
+    Particle: WATER_WAKE
+    BroadcastPrefix: '&c[Hero]'
+    KeyName: '&5[Hero Key]'
+    KeyLore:
+      - '&eUse this key to unlock a Hero crate!'
+      - '&aJust &6right-click&a a Hero chest to open it!'
+    KeyEnchantment: DURABILITY:10
+    KeyMaterial: '388'
+    KeySound: ANVIL_USE
+    CrateLocations: []
+    Random:
+      Enabled: false
+      Min: 2
+      Max: 5
+    GUI:
+      Enabled: true
+      Slots: 9
+      Title: '&aHero Crate Rewards'
+      Items:
+        '1':
+          Item: '264'
+          Amount: 64
+          Name: '&aHero Crate Reward'
+          Lore:
+            - '&aHero Crate Reward'
+          Enchantments:
+            - DURABILITY:10
+        '5':
+          Item: '264'
+          Amount: 64
+          Name: '&aHero Crate Reward'
+          Lore:
+            - '&aHero Crate Reward'
+          Enchantments:
+            - DURABILITY:10
+        '9':
+          Item: '264'
+          Amount: 64
+          Name: '&aHero Crate Reward'
+          Lore:
+            - '&aHero Crate Reward'
+          Enchantments:
+            - DURABILITY:10
+    PrizePackages:
+      '1':
+        Chance: 10
+        PlayerMessage: '&bCongratulations on opening a Hero chest!'
+        BroadcastMessage:
+          - '&b%player% &aopened a Hero Chest!'
+          - '&cBe sure to congratulate him/her when you see them!'
+        Items:
+          '1':
+            Item: '388'
+            Amount: 64
+            Name: '&aEmerald'
+            Lore:
+              - '&aEmeralds!'
+            Enchantments:
+              - DURABILITY:10
+          '2':
+            Item: '388'
+            Amount: 64
+            Name: '&aEmerald'
+            Lore:
+              - '&aEmeralds!'
+            Enchantments:
+              - DURABILITY:10
+        Commands:
+          - sudo %player% me is happy!
+          - msg %player% &2Congratulations on your chest opening!
+        Inventory:
+          Title: '&cHero Crate'
+          Enabled: true
+          Slots: 9
+          Items:
+            '1':
+              Item: '388'
+              Amount: 64
+              Name: '&aEmerald'
+              Lore:
+                - '&aEmeralds!'
+              Enchantments:
+                - DURABILITY:10
+              
+      '2':
+        Chance: 40
+        PlayerMessage: '&bCongratulations on opening a Hero chest, &e%player%&b!'
+        BroadcastMessage:
+          - '&b%player% &aopened a Hero Chest and recieved tier 1 prizes!'
+          - '&cBe sure to steal from him/her when you see them!'
+        Commands:
+          - sudo %player% me is really happy with all these diamonds!
+          - give %player% diamond 64
+        Inventory:
+          Title: '&cHero Crate'
+          Enabled: true
+          Items:
+            '1':
+              Item: '388'
+              Amount: 64
+              Name: '&aEmerald'
+              Lore:
+                - '&aEmeralds!'
+              Enchantments:
+                - DURABILITY:10
+          
+      '3':
+        Chance: 60
+        PlayerMessage: '&aCongratulations! Too bad you didnt win anything good...'
+        BroadcastMessage:
+          - '&b%player% &aopened a Hero Chest and recieved tier 2 prizes!'
+          - '&cThey didnt get anything good..!'
+        Commands:
+          - sudo %player% me is really sad with their prizes
+          - give %player% dirt 5
+        Inventory:
+          Title: '&cHero Crate'
+          Enabled: true
+          Items:
+            '1':
+              Item: '388'
+              Amount: 64
+              Name: '&aEmerald'
+              Lore:
+                - '&aEmeralds!'
+              Enchantments:
+                - DURABILITY:10
